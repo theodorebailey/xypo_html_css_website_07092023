@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xypo Website</title>
     <link rel="stylesheet" href="s.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     
@@ -35,11 +36,11 @@
     <nav id="side-nav">
         <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">OFFERS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#offer">OFFERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" alt="menu" id="menu-btn">
@@ -272,6 +273,7 @@
 
 
     <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
         var menuBtn = document.getElementById("menu-btn");
         var sideNav = document.getElementById("side-nav");
 
